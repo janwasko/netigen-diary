@@ -1,0 +1,5 @@
+# diaryNotNow.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn: "Not now"

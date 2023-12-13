@@ -1,0 +1,23 @@
+# diaryNoteSticker.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Sticker"
+- tapOn: "The note"
+- inputText: "Sticker"
+- tapOn:
+    id: "editNoteAddStickerButton"
+- tapOn:
+    id: "itemAddItemImageView"
+    index: 9
+- tapOn:
+    id: "addStickerBackButton"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Sticker"

@@ -1,0 +1,20 @@
+# diaryNoteDate.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Date"
+- tapOn: "The note"
+- inputText: "Date"
+- tapOn:
+    id: "editNoteDataTextView"
+- tapOn: "15"
+- tapOn: "OK"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Date"

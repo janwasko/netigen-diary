@@ -1,0 +1,9 @@
+# diaryFirstLaunch.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- launchApp:
+    clearState: true
+- tapOn: "Skip"
+- tapOn: "Continue"
+- tapOn: "OK"

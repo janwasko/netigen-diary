@@ -1,0 +1,5 @@
+# diaryAllow.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn: "Allow"

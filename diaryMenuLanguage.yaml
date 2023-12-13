@@ -1,0 +1,11 @@
+# diaryMenuLanguage.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainMenuButton"
+- tapOn: "Language"
+- tapOn: "Norsk"
+- tapOn: "Save"
+- tapOn:
+    id: "menuBackButton"

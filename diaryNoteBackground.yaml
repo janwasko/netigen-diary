@@ -1,0 +1,23 @@
+# diaryNoteBackground.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Background"
+- tapOn: "The note"
+- inputText: "Background"
+- tapOn:
+    id: "editNoteAddBackgroundButton"
+- tapOn: 
+    id: "itemBackgroundBackgroundImageView"
+    index: 5
+- tapOn: 
+    id: "addBackgroundBackButton"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Background"

@@ -1,0 +1,9 @@
+# diaryMenuSound.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainMenuButton"
+- tapOn: "Sound"
+- tapOn:
+    id: "menuBackButton"

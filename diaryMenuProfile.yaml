@@ -1,0 +1,25 @@
+# diaryMenuProfile.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainMenuButton"
+- tapOn: "Your account"
+- tapOn:
+    id: "accountChangeAvatar"
+- tapOn:
+    id: "itemAddItemImageView"
+    index: 1
+- tapOn:
+    id: "addBackgroundBackButton"
+- tapOn:
+    id: "accountChangeName"
+- tapOn:
+    id: "changeNickDialogPinText"
+- eraseText
+- inputText: "Rainbow"
+- tapOn: "OK"
+- tapOn:
+    id: "addSearchBackButton"
+- tapOn:
+    id: "menuBackButton"

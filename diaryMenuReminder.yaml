@@ -1,0 +1,16 @@
+# diaryMenuReminder.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainMenuButton"
+- tapOn: "Reminder"
+- runFlow:
+    when:
+        visible: "Allow"
+    file: "diaryAllow.yaml"
+- tapOn: "6"
+- tapOn: "30"
+- tapOn: "OK"
+- tapOn:
+    id: "menuBackButton"

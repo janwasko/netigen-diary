@@ -1,0 +1,23 @@
+# diaryNoteEmoticon.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Emoticon"
+- tapOn: "The note"
+- inputText: "Emoticon"
+- tapOn:
+    id: "editNoteAddEmoticonButton"
+- tapOn:
+    id: "itemAddItemImageView"
+    index: 9
+- tapOn:
+    id: "addEmoticonBackButton"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Emoticon"

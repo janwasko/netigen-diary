@@ -1,0 +1,24 @@
+# diaryNoteHashtag.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Hashtag"
+- tapOn: "The note"
+- inputText: "Hashtag"
+- tapOn:
+    id: "editNoteAddHashtagButton"
+- tapOn:
+    rightOf: "#"
+- inputText: "Hashtag"
+- pressKey: enter
+- tapOn: 
+    id: "hashtagBackButton"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Hashtag"

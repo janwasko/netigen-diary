@@ -1,0 +1,14 @@
+# diaryMenuSettings.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainMenuButton"
+- tapOn: "Note settings"
+- tapOn: 
+    id: "settingsNoteText04"
+- tapOn: "Sunday"
+- tapOn:
+    id: "backButton"
+- tapOn:
+    id: "menuBackButton"

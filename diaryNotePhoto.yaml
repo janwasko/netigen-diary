@@ -1,0 +1,27 @@
+# diaryNotePhoto.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Photo"
+- tapOn: "The note"
+- inputText: "Photo"
+- tapOn:
+    id: "editNoteAddPhotoButton"
+- runFlow:
+    when:
+        visible: "Allow"
+    file: "diaryAllow.yaml"
+- tapOn: "Camera"
+- tapOn:
+    id: "com.sec.android.app.camera:id/normal_center_button"
+- tapOn: "OK"
+- tapOn: "Save"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Photo"

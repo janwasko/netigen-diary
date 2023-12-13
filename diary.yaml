@@ -1,0 +1,20 @@
+# diary.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- runFlow: diaryFirstLaunch.yaml
+- runFlow: diaryNoteDate.yaml
+- runFlow: diaryNoteEmoticon.yaml
+- runFlow: diaryNoteSticker.yaml
+- runFlow: diaryNoteHashtag.yaml
+- runFlow: diaryNoteDrawing.yaml
+- runFlow: diaryNoteRecording.yaml
+- runFlow: diaryNoteBackground.yaml
+- runFlow: diaryNotePhoto.yaml
+- runFlow: diaryMenuProfile.yaml
+- runFlow: diaryMenuPassword.yaml
+- runFlow: diaryMenuSound.yaml
+- runFlow: diaryMenuLayout.yaml
+- runFlow: diaryMenuReminder.yaml
+- runFlow: diaryMenuSettings.yaml
+- runFlow: diaryMenuLanguage.yaml

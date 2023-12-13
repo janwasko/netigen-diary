@@ -1,0 +1,25 @@
+# diaryNoteRecording.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Recording"
+- tapOn: "The note"
+- inputText: "Recording"
+- tapOn:
+    id: "editNoteAddMusicButton"
+- runFlow:
+    when:
+        visible: "Allow"
+    file: "diaryAllow.yaml"
+- tapOn: 
+    id: "title"
+    index: 5
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Recording"

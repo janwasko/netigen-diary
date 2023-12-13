@@ -1,0 +1,21 @@
+# diaryNoteDrawing.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainAddNoteImageView"
+- tapOn: "Note title"
+- inputText: "Drawing"
+- tapOn: "The note"
+- inputText: "Drawing"
+- tapOn:
+    id: "editNoteAddDrawButton"
+- swipe:
+    direction: LEFT
+- tapOn: "Save"
+- tapOn: "Save"
+- runFlow:
+    when:
+        visible: "Not now"
+    file: "diaryNotNow.yaml"
+- assertVisible: "Drawing"

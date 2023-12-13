@@ -1,0 +1,13 @@
+# diaryMenuLayout.yaml
+
+appId: pl.netigen.diaryunicorn
+---
+- tapOn:
+    id: "mainMenuButton"
+- tapOn: "Diary's layout"
+- tapOn: "List"
+- tapOn: "Unicorn Basic"
+- tapOn:
+    id: "backButton"
+- tapOn:
+    id: "menuBackButton"
